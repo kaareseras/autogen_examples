@@ -6,11 +6,11 @@ load_dotenv()
 
 config_list_gpt4 = [
     {
-        'model': 'gpt-4-32k',
+        'model': 'gpt-4o',
         'api_key': os.getenv('API_KEY'),
-        'api_base': os.getenv('API_BASE'),
+        'base_url': os.getenv('API_BASE'),
         'api_type': 'azure',
-        'api_version': '2023-07-01-preview',
+        'api_version': '2024-08-01-preview',
     }
 ]
 
@@ -37,5 +37,5 @@ user_proxy = autogen.UserProxyAgent(
 # the assistant receives a message from the user_proxy, which contains the task description
 user_proxy.initiate_chat(
     assistant,
-    message="""get the geografical boundingbox for a city or a country and show the bounding box on a map.""",
+    message="""get the geografical boundingbox for a city or a country and show the bounding box on a map. make it into an html file with the map and the box""",
 )
