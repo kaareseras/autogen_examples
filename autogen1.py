@@ -6,7 +6,7 @@ load_dotenv()
 
 config_list_gpt4 = [
     {
-        'model': 'gpt-4o',
+        'model': 'gpt-4o-2',
         'api_key': os.getenv('API_KEY'),
         'base_url': os.getenv('API_BASE'),
         'api_type': 'azure',

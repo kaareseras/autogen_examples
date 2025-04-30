@@ -6,11 +6,11 @@ load_dotenv()
 
 config_list_gpt4 = [
     {
-        'model': 'gpt-4-32k',
+        'model': 'gpt-4o-2',
         'api_key': os.getenv('API_KEY'),
-        'api_base': os.getenv('API_BASE'),
+        'base_url': os.getenv('API_BASE'),
         'api_type': 'azure',
-        'api_version': '2023-07-01-preview',
+        'api_version': '2024-08-01-preview',
     }
 ]
 
