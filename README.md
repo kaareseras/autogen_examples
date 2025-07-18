@@ -7,4 +7,4 @@ For more details. look at MS repo:
 https://github.com/microsoft/autogen
 
 Run this to install Autogen:
-pip install pyautogen
+pip install ag2
